@@ -1,0 +1,66 @@
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{\sqrt{\sqrt{n} + n^2}}{n + \sin{n}}=1$
+
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\sqrt{\frac{4n + 1}{n - 1}}=2$
+
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{n^2 + 1000n}{0.0001n^3 - 500n^2}=0$
+
+
+Докажите расходимость (критерий Коши):
+$x_n=\frac{n^{(-1)^n}}{n + 1}$
+
+
+Докажите сходимость по критерию Коши:
+$x_n=\sum_{k = 0}^{n}\frac{k^2 + 1}{k!}$
+
+
+Докажите сходимость по критерию Коши:
+$x_n=\sum_{k = 1}^{n}\frac{\ln{k}}{2^k}$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to \infty} \left(\frac{2x^2 + 3}{2x^2 - 3}\right)^{x^2}$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to 0} (e^x + x)^\frac{1}{x}$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to 0} (\cos{x})^\frac{1}{x^2}$
+
+
+Найдите эквивалентную $Cx^n$:
+$\frac{10^x - x^2 \ln{10} - 1}{\frac{1 - \cos{x}}{\sin{x}} - \frac{1}{2}}$, где $x \to 0$
+
+
+Найдите эквивалентную $Cx^n$:
+$\ln \left(\sin{x}\cos{x} + \frac{xe^x}{\tan{x}}\right)$, где $x \to 0$
+
+\end{document}

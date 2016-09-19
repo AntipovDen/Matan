@@ -1,0 +1,92 @@
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+%\usepackage{minted}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{\sqrt{n^2 + n} - \sqrt{n}}{2(\sin n + \sqrt{n})^2}=\frac{1}{2}$
+
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{\sqrt{3n + 1} - \sqrt{3n - 1}}{\sqrt{3n - 2}}=2$
+
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{n^2 + \sqrt{n^2 + 1000}}{\cos n^2 + \sin n^2 + n^2}=1$
+
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{\sqrt[3]{2n + 1}}{\sqrt[3]{n + sqrt[3]{n}}}=\sqrt[3]{2}$
+
+
+Докажите расходимость:
+$x_n=\frac{n^2 + n^3}{2^{\cos \frac{\pi n}{2}}}$
+
+
+Докажите расходимость:
+$x_n=\frac{\sin \left(\pi \frac{2n+1}{2}\right)}{1 + \frac{1}{n}}$
+
+
+Докажите сходимость по критерию Коши:
+$x_n=\sum_{k = 1}^{n}\frac{k \cos k}{2^k}$
+
+
+Докажите сходимость по критерию Коши:
+$x_n=\sum_{k = 1}^{n}\frac{k^2 + 1}{2^k}$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to 0} (\sqrt{1 + x} - x)^{\frac{1}{x}}$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to 0} \frac{10^x - 2^x}{\tan x}$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to \frac{\pi}{2}} \left(\frac{\pi}{\cos x} - 2x \tan x \right)$
+
+
+Посчитайте предел:
+$\lim\limits_{x\to \infty} \left( 1 + 3x^4 \right)^{\frac{1}{\sin^2 x}}$
+
+
+Найдите эквивалентную $Cx^n$:
+$\sqrt{2x + \sqrt{x + \sqrt{x}}}$, где $x \to +0$
+
+
+Найдите эквивалентную $Cx^n$:
+$\sqrt{2x + \sqrt{x + \sqrt{x}}}$, где $x \to +\infty$
+
+
+Найдите эквивалентную $Cx^n$:
+$2e^{x^4} + (\cos x - 1)^2 + x^5 - 2$, где $x \to 0$
+
+
+Найдите эквивалентную $Cx^n$:
+$1 - \cos \left( 1  - \cos \left( \frac{1}{x} \right)\right)$, где $x \to \infty$
+
+
+Найдите эквивалентную $Cx^n$:
+$e^{\frac{1}{x}}\ln(1 + x) + x^2$, где $x \to -0$
+
+
+\end{document}
