@@ -1,0 +1,47 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Постройте график в декартовых координатах:
+$y = \frac{2^x}{2^{x + 1} - 1}$
+
+Постройте график в полярных координатах:
+$r = \frac{\cos\phi}{1 - r\sin\phi}$
+
+Докажите предел по определению:
+$\lim\limits_{n \to +\infty} \frac{\sqrt[3]{n^3 + 1}}{n + 1} = 1$
+
+Докажите предел по определению:
+$\lim\limits_{n \to +\infty} n\sin\frac{1}{n} = 1$
+
+Докажите, что последовательность сходится:
+$x_n = \sum_{k = 1}^n \frac{(-1)^{k - 1}}{k(k + 1)}$
+
+Докажите, что последовательность рассходится:
+$x_n = \sqrt[n]{((-1)^n - 1)^n + 1}$
+
+Вычислите предел функции:
+$\lim\limits_{x \to 0} \frac{(\sin2x - 2 \tan x)^2 + (1 - \cos2x)^3}{\tan^7 6x + \sin^6 x}$
+
+Вычислите предел функции:
+$\lim\limits_{x \to 0} \left(\frac{1 + x\ln(1 + x)}{1 - x\arcsin x} \right)^\frac{1}{\sin^2 x}$
+
+
+\end{document}

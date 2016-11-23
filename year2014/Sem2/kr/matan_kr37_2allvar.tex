@@ -1,0 +1,58 @@
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Вычислите интеграл:
+$\int_{0}^{+\infty} \frac{x^4dx}{(x^5 + 1)^4}$
+
+Вычислите интеграл:
+$\int_{2}^{+\infty} \frac{xdx}{x^3 - 1}$
+
+
+
+Вычислите интеграл:
+$\int_{2}^{+\infty} \frac{dx}{x\sqrt{x^2 + x + 1}}$
+
+Вычислите интеграл:
+$\int_{2}^{+\infty} \frac{dx}{x\sqrt{x^2 - 1}}$
+
+
+
+
+
+Вычислите сумму ряда:
+$\sum_{n=1}^{+\infty} \ln\frac{n(2n + 1)}{(n + 1)(2n - 1)}$
+
+Вычислите сумму ряда:
+$\sum_{n=1}^{+\infty} \frac{2n + 1}{n^2(n+1)^2}$
+
+
+
+Определите сходимость ряда:
+$\sum_{n=1}^{+\infty} \frac{(n!)^2}{(2n)!}$
+
+Определите сходимость ряда:
+$\sum_{n=1}^{+\infty} \left(\frac{n^2 + 5}{n^2 + 6}\right)^{n^3}$
+
+
+
+
+\end{document}

@@ -1,0 +1,67 @@
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Продифференцируйте f(x):
+$f(x) = \ln\sqrt{\frac{\sqrt{x^4 + 1} - \sqrt{2} x}{\sqrt{x^4 + 1} + \sqrt{2} x}} - \arctan\frac{\sqrt{2} x}{\sqrt{x^4 + 1}}$
+
+Продифференцируйте f(x):
+$f(x) =  e^x \arcsin\sqrt{\frac{e^x}{e^x + 1}} + \arctan\sqrt{e^x}-\sqrt{e^x}$
+
+Продифференцируйте f(x) 50 раз:
+$f(x) = \frac{3 - 2x^2}{x^2 - 2x + 1}$
+
+Продифференцируйте f(x) 50 раз:
+$f(x) = 2x^2 \sin^2 x \sin 2x$
+
+Посчитайте предел, пользуясь правилом Лопиталя:
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$
+
+Посчитайте предел, пользуясь правилом Лопиталя:
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln \ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$
+
+Посчитайте предел, пользуясь правилом Лопиталя:
+$\lim\limits_{x \to 0} \left(\frac{1}{x} - \frac{1}{e^x - 1} \right)$
+
+Посчитайте предел, пользуясь правилом Лопиталя:
+$\lim\limits_{x \to 0} (\cos x)^\frac{1}{x^2}$
+
+Разложите по формуле Тейлора с остатком $o(x^{2n+1})$:
+$f(x) = \frac{1 - \sqrt{1 + x^2}}{1 + \sqrt{1 + x^2}}$
+
+Разложите по формуле Тейлора с остатком $o(x^{3n+2})$:
+$f(x) = \ln \sqrt{\frac{e - x^3}{1 - ex^3}}$ 
+
+Разложите по формуле Тейлора с остатком $o((x-1)^{2n+1})$:
+$f(x) = x(x - 2)2^{x^2-2x-1}$
+
+Разложите по формуле Тейлора с остатком $o((x + 1)^{2n+1})$:
+$f(x) = \frac{(x + 1)^2}{(2x^2+4x+1)(x^2+2x+3)}$
+
+Посчитайте предел, пользуясь формулой Тейлора:
+$\lim\limits_{x \to 0} \frac{\sin(xe^x) + \sin(xe^{-x}) - 2x - 2x^3/3}{x^5}$
+
+Посчитайте предел, пользуясь формулой Тейлора:
+$\lim\limits_{x \to 0} \left(\frac{e^{x^2}}{\cosh 3x}\right)^\frac{1}{x^2}$
+
+Посчитайте предел, пользуясь формулой Тейлора:
+$\lim\limits_{x \to 0} (\tan (x/3) + 2 - \sqrt[3]{1 + x})^{\cot^2 x}$
+\end{document}

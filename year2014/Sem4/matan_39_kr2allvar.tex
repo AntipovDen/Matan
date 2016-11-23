@@ -1,0 +1,72 @@
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+\usepackage{babel}
+\usepackage{amsmath}
+
+
+\begin{document}
+ 
+Вычислить кратный интеграл в $R^2$:
+
+$$\int\limits_{G} (2 - x - y) dxdy$$
+$$G: \{2y \le x^2 + y^2 \le 4\}$$
+
+$$\int\limits_{G} x^2 y^2 dxdy$$
+$$G: \{y > 0; xy < 1; (x - 2y)(x - y) < 0\}$$
+
+$$\int\limits_{G} (x + y) dxdy$$
+$$G: \{x^2 + y^2 \le R^2; y - kx > 0\}$$
+
+$$\int\limits_{G} \left(\frac{y}{x}\right)^2dxdy$$
+$$G: \{1 \le x^2 + y^2 \le 2x\}$$
+
+Вычислить кратный интеграл в $R^3$:
+
+$$\int\limits_{G} (x + 2y + 3z) dx dy dz$$
+$$G: y = 0, z= 0, z = 2, x + y = 2, y - 2x = 2$$
+
+$$\int\limits_{G} xyz dx dy dz$$
+$$G: y = x^2, x = y^2, z = xy, z = 0$$
+
+$$\int\limits_{G} \frac{dx dy dz}{(1 + x + y + z)^3}$$
+$$G: x = 0, y = 0, z = 0, x + y + z = 1$$
+
+$$\int\limits_{G} \frac{x dx dy dz}{R^4 + (x^2 + y^2 + z^2)^2}$$
+$$G: x \ge 0, x^2 + y^2 + z^2 \le R^2$$
+
+Вычислить криволинейный интеграл:
+
+$$\int\limits_{\Gamma} \frac{z^2}{x^2 + y^2} ds$$
+$$\Gamma: x = \cos t, y = \sin t, z = t, t \in [0; 2\pi]$$
+
+$$\int\limits_{\Gamma} (z + \sqrt{x^2 + y^2}) ds$$
+$$\Gamma: x = t\cos t, y = t\sin t, z = t, t \in [0; 2\pi]$$
+
+$$\int\limits_{\Gamma} (\cos y dx - \sin y dy)$$
+$$\Gamma: y = -x, x \in [-2; 2]$$
+
+$$\int\limits_{\Gamma} ((2 - y) dx + (y - 1) dy)$$
+$$\Gamma: x = t - \sin t, y = 1 - \cos t, t \in [0; 2\pi]$$
+
+Вычислить поверхостный интеграл:
+
+$$\iint\limits_S z^2 dS$$
+$$S: x = u \cos v \sin \alpha, y = u \sin v \sin \alpha, z = u \cos \alpha, u \in [0; 1], v \in [0; 2\pi]$$
+
+$$\iint\limits_S \sqrt{x^2 + y^2} dS$$
+$$S: z = \sqrt{x^2 + y^2}, z \le 1$$
+
+$$\iint\limits_S (x^2y^2 + x^2 z^2 + y^2 z^2) dS$$
+$$S: z = \sqrt{x^2 + y^2}, x^2 + y^2 \le 2x$$
+
+$$\iint\limits_S (x^2 dy dz + z^2 dx dy)$$
+$$S: \text{внешняя } x^2 +y^2 + z^2 = 1, x \le 0, y \ge 0$$
+
+$$\iint\limits_S x^2 y^2 z dx dy$$
+$$S: \text{внутренняя } x^2 + y^2 + z^2 = 1, z \le 0$$
+ 
+ 
+\end{document}
