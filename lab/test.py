@@ -14,6 +14,7 @@ relative_error = 2 ** (-10)
 def evaluate_value(function, x):
     if ';' in function: ##todo: write checker that function is just arithmetical expression
         print('Security violation')
+        exit(0)
     exec("y = " + function)
     return y
 
