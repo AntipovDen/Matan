@@ -1,0 +1,819 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+\usepackage{amsmath}
+
+\makeatletter
+
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+ 
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Кайл Брофловски \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Джек Тенорман \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Линда Блэк \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Эрл \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Офицер Барбреди \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Кэрол Маккормик \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Марвин Марш \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Стюар Маккормик \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Эрик Картман \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{3 - \sin x}{2} \sqrt{\cos^2 x - 2 \sin x} + 2 \arcsin \frac{1 + \sin x}{\sqrt{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Мисс Голлум \tabularnewline
+Посчитайте 4-ю производную:\tabularnewline
+$y = \ln(1 + x^2)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Шерон Марш \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Твик \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Директриса Виктория \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Леммивинкс \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Ричард Твик \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Мисс Клэридж \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{3 - \sin x}{2} \sqrt{\cos^2 x - 2 \sin x} + 2 \arcsin \frac{1 + \sin x}{\sqrt{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Боб Блэк \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Шейла Брофловски \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Стивен Стотч \tabularnewline
+Посчитайте 4-ю производную:\tabularnewline
+$y = \ln(1 + x^2)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Кенни Маккормик \tabularnewline
+Посчитайте 4-ю производную:\tabularnewline
+$y = \ln(1 + x^2)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Токен Блэк \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I've been in 12 different relationships. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{3 - \sin x}{2} \sqrt{\cos^2 x - 2 \sin x} + 2 \arcsin \frac{1 + \sin x}{\sqrt{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант My mom arranged me for a blind date. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I hate him. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант I still love my ex. \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I decided to be a gay / lesbian. \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант I like her, but I can't tell her. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I want a baby. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант She / he broke up with me. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I'm getting married cause Im pregnant/shes pregnant. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \left( \ln(\sqrt{x^2 + 4} - \sqrt{x^2 - 4}) \right)^{\tg(x^2 + \ln 2x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln(x + \sqrt{x^2 + 1})$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант I only date handsome guys. \tabularnewline
+Посчитайте 4-ю производную:\tabularnewline
+$y = \ln(1 + x^2)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I think I like someone, what should I do? \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Im in the police station, help. \tabularnewline
+Посчитайте 4-ю производную:\tabularnewline
+$y = \ln(1 + x^2)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Im going to be a father soon. \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\sqrt{1 - 2x} - e^{-x} + x^2\sqrt[3]{1 + x}}{\sin^2 x - \ln \ch^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to -1} \frac{2x^4 + 3x^3 - 4x^2 - 9x - 4}{3x^4 + 5x^3 +3x^2 + 3x + 2}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант I forgot who I kissed last night. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I feel horny. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{3 - \sin x}{2} \sqrt{\cos^2 x - 2 \sin x} + 2 \arcsin \frac{1 + \sin x}{\sqrt{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{e^x - 1}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sin (2x + x^3) - \sh(x + 2x^3)}{x} \right)^\frac{1}{2\ln(1 + x^2) - \ln^2(1 + x)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{2\tg 3x - 6 \tg x}{3 \arctg x - \arctg 3x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант I'm pregnant. \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I like him, but I can't tell him. \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = (1 + x)^{\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{1}{e} (1 + x)^\frac{1}{x} + \frac{2x}{4 + 5x} \right)^{\ctg^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант I was so drunk last night, \tabularnewline
+can't believe I ran around my house naked. \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = \frac{5x + 2}{x^2 + x + 1} + \ln\sqrt[3]{\frac{(x - 1)^2}{x^2 + x + 1}} + \frac{8}{\sqrt{3}}\arctg\frac{2x + 1}{\sqrt{3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} \frac{\sqrt[3]{x} \ln\ln x}{\sqrt[3]{2x + 3}\sqrt{\ln x}}$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант I secretly have a child. \tabularnewline
+Посчитайте 666-ю производную:\tabularnewline
+$y = \frac{1 + x^2}{1 - x^2}$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \ln\sqrt{\frac{e - x^3}{1 - ex^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\cos x} - e\sqrt[3]{1 - 4x^2}}{\frac{\arcsin 2x}{x} - 2\cos (x^2)}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{\sin x} - e^x}{\sin x - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+
+\end{document}

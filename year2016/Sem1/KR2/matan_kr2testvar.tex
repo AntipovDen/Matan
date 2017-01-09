@@ -1,0 +1,52 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Посчитайте произодную функции:
+
+$$y = \sqrt{\ln x}(\ln x - \log_{ex}x)\sqrt{\ln x + \log_x e + 2}$$
+
+\textit{Обратите внимание, что $\sqrt{a^2} = |a|.$}
+
+Посчитайте 566-ю производную функции:
+
+$$y = \sin x \sin 2x \sin 3x$$
+
+Разложите функцию в ряд Тейлора до $o((x - 1/\sqrt{e})^9)$:
+
+$$y = \frac{1 -2x \sqrt{e} + ex^2}{\sqrt{-\ln(2x-x^2\sqrt{e})}}$$
+
+Разложите функцию в ряд Тейлора до $o(x^n)$:
+
+$$y = \frac{5x^3 + 28}{14 + 5x^3 - x^6}$$
+
+Посчитайте предел с помощью рядов Тейлора:
+
+$$\lim\limits_{x \to 0} \left( \frac{\tg 3x + \cos 4x - \cos 2x}{\ln\sqrt{1 + 3x} - \ln\sqrt{1 - 3x}} \right)^\frac{1}{\sin x}$$
+
+\textit{Не забывайте про метод неопределенных коэффициентов}
+
+Посчитайте предел с помощью правила Лопиталя:
+
+$$\lim\limits_{x \to +\infty}(3x^2 + 3^x)^\frac{1}{x}$$
+
+\textit{Мы такое не проходили на парах, но правило Лопиталя не всегда применяется в лоб, сначала нужны уже известные вам преобразования}
+
+\end{document}
