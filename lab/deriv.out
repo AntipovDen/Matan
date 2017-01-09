@@ -1,0 +1,16 @@
+0
+0
+1
+1 / x
+cos(x)
+-sin(x)
+1 / cos(x) ** 2
+1 / sin(x) ** 2
+1 / (1 + x ** 2)
+1 / (1 - x ** 2) ** (0.5)
+sin(x) / x + ln(x) * cos(x)
+2 * x
+3 * x ** 2
+ln(2) * 2 ** x
+x ** x * (ln(x) + 1)
+(sin(x) / (1 + x ** 2) - cos(x) * arctg(x)) / sin(x) ** 2
