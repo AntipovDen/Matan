@@ -1,0 +1,901 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+\usepackage{amsmath}
+
+\makeatletter
+
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+ 
+ 
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Рик Граймс \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Шейн Уолш \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Лори Граймс \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Андреа \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Дейл Хорват \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Гленн \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Карл Граймс \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Дэрил Диксон \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sqrt{1 + x} - \sqrt{1 - x}}{\sh x} \right)^\frac{1}{\sin^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Кэрол Пелетье \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Мерл Диксон \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Морган Джонс \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Мэгги Грин \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sqrt{1 + x} - \sqrt{1 - x}}{\sh x} \right)^\frac{1}{\sin^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Хершел Грин \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Мишонн \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Бет Грин \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Губернатор \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Тайриз \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Саша \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Боб Стуки \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Тара Чамблер \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Абрахам Форд \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Юджин Портер \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Росита Эспиноса \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Гарет \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Гэбриел Стоук \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Аарон \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Диана Монро \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Джесси Андерсон \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Спенсер Монро \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Ниган \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Дуайт \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Иисус \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Грегори \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Иезекииль \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Дэниз Клойд \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Саймон \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sqrt{1 + x} - \sqrt{1 - x}}{\sh x} \right)^\frac{1}{\sin^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Энид \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Хит \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^5)$:\tabularnewline
+$y = \frac{x}{\cos x \sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Рэдж Монро \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Сэм Андерсон \tabularnewline
+Посчитайте 240-ю производную:\tabularnewline
+$y = x^{239}\ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^4)$:\tabularnewline
+$y = \frac{x}{\arctg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{e^2 - (1 + 2x)^\frac{1}{x}}{2xe^2}\right)^\frac{1}{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Рон Андерсон \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \left( \frac{\sqrt{1 + x} - \sqrt{1 - x}}{\sh x} \right)^\frac{1}{\sin^2 x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/2+} \frac{\ln\left(x - \frac{\pi}{2}\right)}{\tg x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Пит Андерсон \tabularnewline
+Посчитайте производную:\tabularnewline
+$y = (2^x)^{(3^x)} \arcsin \left(\frac{2x}{1 + x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o(x^n)$:\tabularnewline
+$y = \frac{1}{1 - x + x^2 - x^3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to +\infty} (\pi - 2 \arctg\sqrt{x})\sqrt{x}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Истмен \tabularnewline
+Посчитайте 300-ю производную:\tabularnewline
+$y = x^2 \ln x$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{\arcsin x + 3 \cos x - 3\sqrt[3]{1 + x}}{1 + \ln(1 + x) - e^x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to 0} \left(\frac{1}{x\arctg x} - \frac{1}{x^2}\right)$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Оуэн \tabularnewline
+Посчитайте 100500-ю производную:\tabularnewline
+$y = (x - \sin x)^2$\tabularnewline
+\noalign{\vskip4mm}
+
+Разложите в ряд Тейлора до $o((x - 2)^n)$:\tabularnewline
+$y = \ln\frac{(x - 1)^{x - 2}}{3 - x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью рядов Тейлора:\tabularnewline
+$\lim\limits_{x \to 0} \frac{e^{e^x - 1} - \frac{1}{1 - x}}{\ln\frac{1 + x}{1 - x} - 2\sin x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Посчитайте предел с помощью правила Лопиталя:\tabularnewline
+$\lim\limits_{x \to \pi/6} \frac{\sqrt[5]{3\tg^2 x} - 1}{2\sin^2 x + 5 \sin x - 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+
+ 
+\end{document}

@@ -1,0 +1,79 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+\usepackage{amsmath}
+
+\makeatletter
+
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+
+Постройте график в декартовых координатах:
+$y = e^{1/(x^2 - 1)}$
+
+Постройте график в полярных координатах:
+$r^2 \sin(2\phi + \frac{\pi}{2}) = \frac{1}{2}$
+
+Постройте график в декартовых координатах:
+$y = \tg\frac{\pi}{x^2}$
+
+Постройте график в полярных координатах:
+$r = \frac{1}{\phi^2}$
+
+
+
+Докажите предел по определению:
+$\lim\limits_{n \to +\infty} \frac{n + 1}{\sqrt{n^2 + 2n}} = 1$
+
+Докажите предел по определению:
+$\lim\limits_{n \to +\infty} (\frac{\sqrt[3]{n^2 + n}}{n + 2} = 0$
+
+Докажите предел по определению:
+$\lim\limits_{n \to +\infty} \frac{n(2^{-n} + 1)}{2n  + 1} = \frac{1}{2}$
+
+Докажите предел по определению:
+$\lim\limits_{n \to +\infty} \frac{\ln(n + 1)}{\ln(n^2 + 1)} = \frac{1}{2}$
+
+
+
+Докажите, что последовательность расходится:
+$x_n = \sqrt{n!}$
+
+Докажите, что последовательность сходится:
+$x_n = \frac{(2n)!!}{(2n + 1)!!}$
+
+Докажите, что последовательность сходится:
+$x_n = \prod_{k = 1}^{n}(1 + 2^{-k})$
+
+Докажите, что последовательность расходится:
+$x_n = \sum_{k = 2}^n \frac{1}{\sqrt{k} \ln k}$
+
+
+
+
+Вычислите предел функции:
+$\lim\limits_{x \to \pi} \frac{\sin x}{\pi^3 - x^3}$
+
+Вычислите предел функции:
+$\lim\limits_{x \to 0} x \ctg 5x$
+
+Вычислите предел функции:
+$\lim\limits_{x \to 0} \frac{\sqrt{1 + \tg x} - \sqrt{1 + \sin x}}{x ^ 3}$
+
+Вычислите предел функции:
+$\lim\limits_{x \to 0} x^{\frac{2x}{2x + 1}}$
+
+
+
+\end{document}
