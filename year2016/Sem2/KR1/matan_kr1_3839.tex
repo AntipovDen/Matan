@@ -1,0 +1,786 @@
+\documentclass[russian,landscape]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\makeatletter
+
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+\newcommand{\dx}{\text{d}x}
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Повелитель гигантов \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Два Драконьих всадника \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\cos^3 x}{\sqrt[5]{\sin x}}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{x^4 - 2x^2 + 2}{(x^2 - 2x + 2)^2}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Защитник трона и Смотритель трона \tabularnewline
+Выразите через $Li(x)$:\tabularnewline
+$\int \frac{x^{100} \dx}{\ln x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{x^4 - 2x^2 + 2}{(x^2 - 2x + 2)^2}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$x = (1 - \cos 2t), y = \sin t - \frac{\sin 3t}{3}, t \in [0; \frac{\pi}{2}]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Нашандра \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Преследователь \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Древний Драконоборец \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{x^3 \sqrt[3]{2 - x^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Гибкий часовой \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Горгульи с башни \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{x^3 \sqrt[3]{2 - x^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Колесница палача \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Прячущийся во тьме \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos \ln x \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$x = (1 - \cos 2t), y = \sin t - \frac{\sin 3t}{3}, t \in [0; \frac{\pi}{2}]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Командир крысиной гвардии \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Боец крысиной гвардии \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{x^4 - 2x^2 + 2}{(x^2 - 2x + 2)^2}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$x = (1 - \cos 2t), y = \sin t - \frac{\sin 3t}{3}, t \in [0; \frac{\pi}{2}]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Демон из Плавильни \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{x^4 - 2x^2 + 2}{(x^2 - 2x + 2)^2}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$r = \th \frac{\phi}{2}, \phi \in [0; \phi_0]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Древний Дракон \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Вендрик \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\cos^3 x}{\sqrt[5]{\sin x}}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Алдия, ученый Первородного Греха \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Варг, Церах и Разорительница Гробниц \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos \ln x \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Скверная королева Элана \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos \ln x \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Син Дремлющий дракон \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$r = \th \frac{\phi}{2}, \phi \in [0; \phi_0]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Дымный рыцарь \tabularnewline
+Выразите через $Li(x)$:\tabularnewline
+$\int \frac{x^{100} \dx}{\ln x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Сэр Алонн \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\cos^3 x}{\sqrt[5]{\sin x}}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$x = (1 - \cos 2t), y = \sin t - \frac{\sin 3t}{3}, t \in [0; \frac{\pi}{2}]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Старый Демон из Плавильни \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{x^3 \sqrt[3]{2 - x^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Аава, питомец короля \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$x = (1 - \cos 2t), y = \sin t - \frac{\sin 3t}{3}, t \in [0; \frac{\pi}{2}]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Луд и Заллен \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$r = \th \frac{\phi}{2}, \phi \in [0; \phi_0]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Сгоревший Король Слоновой Кости \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Судия Гундир \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{x^4 - 2x^2 + 2}{(x^2 - 2x + 2)^2}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Вордт из Холодной долины \tabularnewline
+Выразите через $Li(x)$:\tabularnewline
+$\int \frac{x^{100} \dx}{\ln x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Знаток кристальных чар \tabularnewline
+Выразите через $Li(x)$:\tabularnewline
+$\int \frac{x^{100} \dx}{\ln x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{x^3 \sqrt[3]{2 - x^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Дьяконы глубин \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$r = \th \frac{\phi}{2}, \phi \in [0; \phi_0]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Хранители Бездны \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Верховный повелитель Вольнир \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Понтифик Саливан \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\cos^3 x}{\sqrt[5]{\sin x}}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$r = \th \frac{\phi}{2}, \phi \in [0; \phi_0]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Олдрик, пожиратель богов \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \cos x \ln (1 + \sin^2 x) \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Гигант Йорм \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\cos^3 x}{\sqrt[5]{\sin x}}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{(x + 1)dx}{(2x^2 + 1) \sqrt{x^2 + 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения данной кривой вокруг оси Ox:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t, t\in[0; 2\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\begin{tabular}{l}
+Вариант Танцовщица Холодной долины \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{3 \ch x + 5 \sh x + 3}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{x^4 - 2x^2 + 2}{(x^2 - 2x + 2)^2}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите объем тела вращения плоской фигуры, ограниченной данными кривыми, вокруг оси Oy:\tabularnewline
+$y = e^x + 6, y = e^{2x}, x = 0$ \tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Доспехи драконоборца \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \left(\frac{\ln x}{x} \right)^3 \dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{x^3 \sqrt[3]{2 - x^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$r = 2\sqrt{\phi\arccos(\phi^2 - 1)}, \text{ }, \phi = 1 \text{ и } \phi = \sqrt{\frac{3}{2}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+\begin{tabular}{cc}
+\begin{tabular}{l}
+Вариант Лотрик, младший принц и Лориан, старший принц \tabularnewline
+Вычислите интеграл:\tabularnewline
+$\int \frac{\cos^3 x}{\sqrt[5]{\sin x}}\dx$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{(x - 1)^3 \sqrt{x^2 - 2x - 1}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x = \cos^3 t, y = \sin^3 t$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину кривой:\tabularnewline
+$x = (1 - \cos 2t), y = \sin t - \frac{\sin 3t}{3}, t \in [0; \frac{\pi}{2}]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}& %
+\begin{tabular}{l}
+Вариант Душа пепла \tabularnewline
+Выразите через $Li(x)$:\tabularnewline
+$\int \frac{x^{100} \dx}{\ln x}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите интеграл:\tabularnewline
+$\int \frac{\dx}{x^3 \sqrt[3]{2 - x^3}}$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите площадь фигуры, ограниченной кривыми:\tabularnewline
+$x^2 +y^2 = 2 \text{ и } y^2 = 2x - 1$\tabularnewline
+\noalign{\vskip4mm}
+
+Вычислите длину петли кривой:\tabularnewline
+$r = \frac{1}{\sin^2 (\phi / 3)}, \phi \in [0; 3\pi]$\tabularnewline
+\noalign{\vskip4mm}
+
+\end{tabular}\tabularnewline
+\noalign{\vskip4mm}
+\end{tabular}
+
+
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=1cm,lmargin=1cm,rmargin=1cm}
+\usepackage{amsmath}
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+\newcommand{\dx}{\text{d}x}
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+
+\textit{1 задание: простые интегралы и интегралы транцентдентных функций}
+
+Посчитайте неопределенный интеграл:
+$$\int \arcsin\sqrt{\frac{x}{x + 1}} \dx$$
+
+Посчитайте неопределенный интеграл:
+$$\int \sqrt{\tg^3 x} \dx$$
+
+\textit{2 задание: интегралы рациональных и иррациональных функций}
+
+Посчитайте неопределенный интеграл:
+$$\int \frac{4x\dx}{(x + 1)(x^2 + 1)}$$
+
+Посчитайте неопределенный интеграл:
+$$\int \frac{x + \sqrt{1 + x + x^2}}{1 + x + \sqrt{1 + x + x^2}} \dx$$
+
+\textit{3 задание: площади плоских фигур}
+
+Посчитайте площадь фигуры, ограниченной следующими кривыми:
+$$x = a(t - \sin t); y = a(1 - \cos t); t \in [0; 2\pi]$$
+$$y = 0$$
+
+Посчитайте площадь фигуры, ограниченной кривой, заданной в полярных координатах:
+$$ r^2 = 2a^2 \cos 2 \phi$$
+
+\textit{4 задание: длина кривой или объем}
+
+Посчитайте длину участка графика функции:
+$$ y = \sqrt{x^2 - 32} + 8 \ln (x + \sqrt{x^2 - 32}), x \in [6;9]$$
+
+Посчитайте объем фигуры, получающейся в результате вращения плоской фигуры вокруг оси OY. Плоская фигура ограничена следующими кривыми:
+$$y = tg^2 x$$
+$$y = 0$$
+$$x = \sqrt{\pi/3}$$
+\end{document}
