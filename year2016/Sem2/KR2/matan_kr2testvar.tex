@@ -1,0 +1,48 @@
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=1cm,lmargin=1cm,rmargin=1cm}
+\usepackage{amsmath}
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+\newcommand{\dx}{\text{d}x}
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+
+\textit{1 задание: сходимость несобственных интегралов функций, неограниченных на отрезке}
+
+Исследовать на сходимость:
+$$\int\limits_0^1 \frac{\sin \frac{1}{x}}{(\sqrt{x} - x)^2}\dx$$
+
+Доказать сходимость:
+$$\int\limits_0^1 \ln | 1 - 4 \sin^2 x| \dx$$
+
+\textit{2 задание: сходимость несобственных интегралов функций на бесконечном промежутке (иногда к тому же и неограниченных)}
+
+Доказать сходимость:
+$$\int\limits_0^{+\infty} \frac{e^{\cos x} \sin \sin x}{x} \dx$$
+
+Исследовать на сходимость:
+$$\int\limits_0^{+\infty} \frac{\sin \ln x}{\sqrt{x}} \dx$$
+
+\textit{3 задание: сумма числового ряда}
+
+Вычислите сумму ряда:
+
+$$\sum\limits_{n = 1}^{+\infty} \ln \frac{e^n + e}{e^n + 1}$$
+
+\textit{4 задание: сходимость числовых рядов}
+
+Исследуйте ряд на сходимость:
+$$\sum\limits_{n = 1}^{+\infty} \frac{\sin(n + \frac{1}{n})}{\ln \ln (n + 1)}$$
+
+\end{document}
