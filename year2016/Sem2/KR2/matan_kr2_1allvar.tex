@@ -1,0 +1,75 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\makeatletter
+
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+\newcommand{\dx}{\text{d}x}
+\makeatother
+
+\usepackage[russian]{babel}
+\begin{document}
+
+
+Доказать расходимость:
+$\int\limits_0^1 \frac{(1 - x)^\frac{5}{3}}{\arctg^2 (x - x^2)} \dx$
+
+Доказать расходимость:
+$\int\limits_{-1}^1 \frac{1 + x}{1 - x} \ln(2 + x) \dx$
+
+Исследовать на сходимость:
+$\int\limits_0^{\frac{1}{2}} \frac{1 - x}{x} \cos \frac{1}{x^2} \dx$
+
+Доказать расходимость:
+$\int\limits_{-1}^1 \sin\frac{1 + x}{1 - x} \frac{\dx}{(1 - x^2)^2}$
+
+
+Исследовать на сходимость:
+$\int\limits_1^{+\infty} \frac{\ln \ch x}{x^2 \ln^3 \left(1 + \frac{1}{x}\right)} \dx$
+
+Исследовать на сходимость:
+$\int\limits_0^{+\infty} x^{-(1 + x)} \dx$
+
+Исследовать на сходимость:
+$\int\limits_1^{+\infty} \frac{\cos x \dx}{2x - \cos \ln x}$
+
+Исследовать на сходимость:
+$\int\limits_1^{+\infty} \ln \left(1 + \frac{e^{1/x} - 1}{2} \right)\dx$
+
+
+Вычислить сумму ряда:
+$\sum\limits_{n = 1}^{+\infty} \frac{n^2 + 3n + 1}{n^2 (n + 1)^2}$
+
+Вычислить сумму ряда:
+$\sum\limits_{n = 1}^{+\infty}  \ln\frac{4 \cdot 2^n + 4}{4 \cdot 2^n + 1}$
+
+Вычислить сумму ряда:
+$\sum\limits_{n = 1}^{+\infty}  \frac{2n + 1}{(2n + 2)!!}$
+
+Вычислить сумму ряда:
+$\sum\limits_{n = 1}^{+\infty}  \frac{2^n + 2 \cdot 3^n}{2 \cdot 2^{2n} + 5 \cdot 6^n + 3\cdot 3^{2n}}$
+
+
+Исследовать на сходимость:
+$\sum\limits_{n = 1}^{+\infty} \frac{1}{\sqrt[n]{\ln(n + 1)}}$
+
+Исследовать на сходимость:
+$\sum\limits_{n = 1}^{+\infty} \sqrt{\frac{n - 1}{n^2 + 1}} \arctg \frac{n + 1}{\sqrt[3]{n^4 + 4}}$
+
+Исследовать на сходимость:
+$\sum\limits_{n = 1}^{+\infty} \frac{(2n)!}{n! (n + 1)! 3^{2n}}$
+
+Доказать сходимость:
+$\sum\limits_{n = 1}^{+\infty} (\sqrt{n^2 + n} - n)^{n^2}$
+
+\end{document}
