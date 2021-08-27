@@ -1,0 +1,50 @@
+
+\documentclass[russian]{article}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=0cm,lmargin=0cm,rmargin=0cm}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\cyrtext}{%
+  \fontencoding{T2A}\selectfont\def\encodingdefault{T2A}}
+\DeclareRobustCommand{\textcyr}[1]{\leavevmode{\cyrtext #1}}
+\AtBeginDocument{\DeclareFontEncoding{T2A}{}{}}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+Постройте график в декартовых координатах:
+$y = e^{1/(x^2 - 1)}$
+
+Постройте график в полярных координатах:
+$r = \frac{1}{1 - \sin\phi}$
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{n^2 + \sqrt{n^2 + 1000}}{\cos n^2 + \sin n^2 + n^2}=1$
+
+Докажите по определению:
+$\lim\limits_{n\to+\infty}\frac{\sqrt[3]{2n + 1}}{\sqrt[3]{n + \sqrt[3]{n}}}=\sqrt[3]{2}$
+
+Докажите, что последовательность сходится:
+$x_n=\sum_{k = 1}^{n}\frac{k \cos k}{2^k}$
+
+Докажите, что последовательность расходится:
+$x_n=\sum_{k = 1}^{n}\frac{1}{\ln^2(k)}$
+
+Посчитайте предел:
+$\lim\limits_{x\to 0} (\sqrt{1 + x} - x)^{\frac{1}{x}}$
+
+Посчитайте предел:
+$\lim\limits_{x\to \frac{\pi}{2}} \left(\frac{\pi}{\cos x} - 2x \tan x \right)$
+
+
+
+
+
+\end{document}
